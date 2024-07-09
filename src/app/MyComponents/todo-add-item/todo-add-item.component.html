@@ -1,0 +1,6 @@
+<!-- <p>todo-add-item works!</p> -->
+<form (ngSubmit)="OnSubmit()"  class="input-group flex-nowrap">
+    <input type="text" [(ngModel)]="title" id="title" name="title" class="form-control" placeholder="add in todo title" aria-label="Username" aria-describedby="addon-wrapping">
+    <input type="text" [(ngModel)]="desc" id="desc" name="desc" class="form-control" placeholder="add in todo description" aria-label="Username" aria-describedby="addon-wrapping">
+    <button type="submit" class="input-group-text" id="addon-wrapping">+</button>
+</form>

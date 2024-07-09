@@ -1,0 +1,10 @@
+<!-- <p>todos works!</p>
+<p>todos works!</p>
+<ul *ngFor="let todo of todos">
+    <li>{{todo.title}}</li>
+</ul> -->
+<h2 class="text-center">My Todo List😘</h2>
+<app-todo-add-item class="text-center m-3" (todoadd)="addtodo($event)"></app-todo-add-item>
+<div *ngFor="let todo of todos">
+    <app-todo-item [todo]="todo" (tododelete)="deletetodo($event)"></app-todo-item>
+</div>
